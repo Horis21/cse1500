@@ -1,0 +1,51 @@
+<form action="action_page.php" style="border:1px solid rgb(0, 0, 0)">
+    <div class="container">
+      <h1>Search an item</h1>
+      <p>Enter information for the item you are searching.</p>
+      <hr>
+
+      <label for="name"><b>Name</b></label><br>
+      <input><br>
+      <p><b>Filter by:</b></p>
+      <input type="checkbox" id="supp">
+    <label for="supp"> Supplier</label><br>
+    <input><br>
+    <input type="checkbox" id="range">
+    <label for="supp"> Price Range (EUR)</label><br>
+    <div class="range_container">
+                <div class="form_control">
+            <div class="form_control_container">
+                <div class="form_control_container__time">Min</div>
+                <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+            </div>
+            <div class="form_control_container">
+                <div class="form_control_container__time">Max</div>
+                <input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100"/>
+            </div>
+        </div>
+    </div>
+    <p><b>Show only:</b></p>
+    <input type="checkbox" id="book">
+    <label for="book"> Books</label><br>
+    <input type="checkbox" id="film">
+    <label for="film"> Films</label><br>
+    <input type="checkbox" id="cloth">
+    <label for="cloth"> Clothing</label><br>
+    <input type="checkbox" id="dev">
+    <label for="dev"> Devices</label><br>
+
+
+    <label for="sort">Sort by:</label>
+    <select name="filters" id="filters">
+        <option value="stars">Ratings</option>
+    <option value="pop">Popularity</option>
+    <option value="pup">Price - Ascending</option>
+    <option value="pdown">Price - descending</option>
+    </select><br>
+
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="searchbtn">Search</button>
+      </div>
+    </div>
+  </form>

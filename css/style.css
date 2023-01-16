@@ -1,0 +1,52 @@
+body {
+    color:black;
+    background-color: white;
+}
+
+.para1 {
+    color: darkorchid;
+}
+
+.parent {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.child {
+  color: white;
+  background-color: black;
+  margin: 10px;;
+  padding:auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: black;
+  align-self: flex-start;
+}
+
+.product {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.products-image {
+    text-align: center;  
+    padding: 15px;  
+    border: 3px solid black;
+    width: fit-content; 
+}
+
+img{
+    height: auto;
+    width: 200px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <form action="action_page.php" style="border:1px solid rgb(0, 0, 0)">
+    <div class="container">
+<h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+
+  <!-- <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div> -->
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://media.s-bol.com/m8NER5kD88A0/oVqlwpk/1000x1200.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">1984 by George Orwell</div>
+      <p class="product-description">Nineteen Eighty-Four is a dystopian social science fiction novel and cautionary tale by English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime..</p>
+    </div>
+    <div class="product-price">12.99</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISFRgSEhISEhgREhISGBERERoREhISGBgZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjEhISExMTE0MTQxNDE0NDQ0NDExNDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDE0PzQ0P//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBQcEBgj/xABMEAACAQICAwgNCAgFBQAAAAAAAQIDEQQSBiExBSJBUXFzsbIHExQXMjRSYXKRk8HRIyRTVHSBodJCQ2JkkpTC8BYzg8PxFUSCouH/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAnEQACAQIFBAMBAQEAAAAAAAAAAQIDEQQSMTJREyFBgRRhoZFxIv/aAAwDAQACEQMRAD8A2YAAAQ8vpLpXTwbyRipztduUslOmnszPW2/Ml6j00nqMG0zxUp1E2755ym/XsLKcFJ9/BXUk49kelq9kepfVOmvRoO34zOej2RcRbf1acpa9ccNlVuDU5sz6YlzRkjwU5pcmivsi1vpI/wAuvzCd8Wv9LH+XX5jO7gMkeBmfJoffExH00f5ZfmDviYj6aP8ALr8xngDJHgZnyaJ3xK/00f5ZfmF74tf6WH8uvzGdBcZI8DM+TRe+NVWt1I6v3dfmK2p2VcWpO0sNGOxRnB5352oOVuQ8dOnelUnwwi5Ll/5aPfbjblUsNTjGEIqWWOadlnnK2tuW3bwHKpZ5WXax055Fd3dzgl2VcXdWqYZLXddz1W3xWdtQS7K+L4Hh/ZVF/SeguCZZ8T7/AA4+R9HnX2VsZ5WH9lU/INfZXxi2zoLlpzX9B6bMNnFSVmk09TTV0+VD4n2PkLj9PM99fGeXQ9nL8gd9jGfSYf2cvyFdu5ofJz7ZhFTip+FRk8sE+Fx4Leb/AILXRvRunhY55qM6stbna6h+zG+zl2sqWHm5ZWrLktdaOW6Grsr4zyqHsp/kF77GM46Hsp/lPRJDi34n3+FfX+v08731sZbbh0+ZqP8ApFp9ljFpLNLCt8LdGrFN+rUekih7jqOfi28/hPX+hNF+yhSxFSNDExhTlUaUK1Oeak5PUozUt9Bt6ru65DSUfP8AphuPTjKFanBQk60KcnFZcymmk3ba07aza9GcU6uEoVJO8p0Kbb/ayq5nqQcXYvjJSVy2AAKzoAAAAAAAGVNj5GYBpat/DkZv9TY+RmB6XrfU+Rl1HyUVdUedkxAkIaGViiwg5OyV/wC/wEim7JcOoXE4jKu1wdkvClwyfw/vjvzOSirnUYuTFnGEfCmr8UU5Mjdan5U/vivicqd3b/4LOnHglwcOVf1GfqyLunE64tS8GSl+D9TAp3NrWm01wosMLie2Kz8KP4osjVv2ZXKFu6O7/t6/of1RNLRmf6iv6HviaOpmqhufoqq7V7JRMxG5DUzSZybMFxiAAUUah0UDofEdFCRRLFHLZIsULJjoobVjdatpyweb0sqXp0+JYrDdY0/QzxHD8zH3mWaUf5cE/rWG6xqehfiOG5iHvMOK3fw10dpegAGYuAAAAAAABlTY+RmDaYR10+Rm81Nj5GYXphH/ACvRZfR8lFbVHlZISxLNDcpcVXEg7Xl5MW1y7F0nBJM7qq3kuRP1NMr6lbVbVy/Az1dTRS0IpSGyi/UR59Y+tXuratSSvychUWEDZJhpuM1JcDS4rp6mc99fESyq52laN3JLUrPgSStwaukeQeikn2mvsy9rfLfNC33bTRLmfT8Xrc374mhI9LD7n6MdXavYAgFRrKByQNCoWxySNsOiJYdB2IuSTRQ9EUJjs5ywTREmNUyGtUZFgee0p1Rgv3rDdY1PQzxHDczD3mUaTPe0/tWH6yNX0M8Rw3Mw95hxW70jXQ2l6AAZi4AAAAAAAIcTNRjKT2Ri5O22yVzEtLUmqTWxxbXIbVjYOVOcVtlCcVfZdxaRjOlMLRpJ8EbepGih5M9bVHlZxG5SecRuUvKrkTj/AH5igxMHCTi/ufGj0mU5sXg1NWa5GtqfmKqkM3dallOeXU85KR7HSXQCrgcLHFyrQqXcFOnGLj2tzW9yyvvlfVsXGeXr7nVI7Fm5NT9TOjG4/HV4Ro1alapTp2yU5t5YWVlt4k7K5lcZXNCkinbLDcjCucszWqOvlewfhNyJSd571cS1v1l/TpRhFQirJfiXQptu7K5zSVkJWXzet6D60TQEeCxK+Qrc2+tE98kbKG6Xoz1Nq9iIckEUPSNJUCQ6wtgsGwQzdhIyHTgRSdiESTMIbTknUHRrLjJsRc7XPWQ1ahGqpHOPCEhcptI3vKf2rDdY1fQqSeBw9r6qSjr41f8AAyfSLwKf2rDdY1fQiLWCoX4aal9zbsedit/8NdDb/T0IABlLwAAAAAAAZPY+RmMaUx3tLkZs89j5GY7pKt7S5PcaKHkz1/B5acRuUnnEZlNNjPcjyhlJcoZSLC5C4X4BO1LiXqJsoqgLE3IsoZSaUGm00002mmrNNbU0JlBFzmxi+Qreg+tA9+keK3SXzOXLW/2T20Ud0dz9HU9q9ixR3YDc2pXu4JPLa95W27Og44oudy183xCu1dQV07NXb2PgO683CF0cwipOzD/DuJ8mP8aFWj+J8mP8aLejXkq9OjUbcqaqvNsVWDSyz5eBrj5UJKgp4ipmp05qPad9ObjKCyvwY5Xf1ox/JqfRo6USpejuI8mP8aIKmjGJf6MP4keo3TqKlOFdu0Y3p1OJQlrjJ8kkvukyDJLuWrOd1OtTq1WuGGaLyx/8Y5V9xysTO1+xLoxPKvRTF+TD2iGf4TxfkQ9oj2W42FUI5u1U6blCCvCo5uStffXira+UpMHD5aLy9rcsZiX3RnfyijOfyLS41svqtF21nfyp99DnoxPKYqhOjOVOaSlFpNJ3WxPb94zPqLHSbxqr6UepEq7G+nLNFN+TNJWbRVaQ+BT+1YbrGu6GeI4bmYmR6QreU/tOH6yNb0N8Sw/Mw955+L3+ka6GwvQADKXgAAAAAABBi3aEnstCTv8AczJN31eFF/sLoNax3+XPm59VmUbtx3lH0F0I04fyZsR4PNVI6xuU6asdYzKaDNchyhlJcoZQLk+59oqpLLCTjTus8I1Ip54K9pK2xv1nVOu12mpGNGWduWXuWnTSknkadk8y4nyPac2FnCOdTzJVIZbxSbW+jLY2uI63XptQjKpUcabTilQpq1vOndnLXc7TVjj3XqSqVqjnGEWqlSLVOKirqb4Ulmf7TV2ceU68XNTnOavadSc1fbaUm1f1kWU6S7HDfc591VbBz/1f9k9tFHjd2V8zl/q/7J7NHVLc/R3LZH2OiXujym41FCFOabjmVSTiuG2pJ3KKLLzcaClRrxc408zprPJ2im3qT1rU3q28JOJ2CluL75w2pOlh243tLtkm1fbZ5NRFUw05vNPD4WctW+lLNLVs1uByTlHubEwUKcHCNRS7S703JwTutWrU1dFjgMPDLKLp4dZklJUrSjKNv0tS85517eDXa4VHXknGVOhJNa4uo2mvOnAJzrtOLp0GmmmnUbTXCmspFuThKcZVXGEE41pRTUUmo5Ial5tb1DMFg6SxFW1OC7XGi42gllbU7tcQuuCbMShQrU23Tw2Eg3qbhNwb8ztTEksTbL3PhLZ8+V1XbPfNmt2vwr678ZPuZVip105K7xLsrq7+Tp7EV2DowliK0pU8NK2K1Tm126LVKnbInHjtw8LF/oi32eT3ec3iKjmoxlmV4wk5RTyx2NpX9RwtllpN41V9KPUiVzPWpbI/4YZ7mVGkPgU/tWG6xq+g/iNDW38nwu/C9XIZRpD4FP7VhuuaxoP4jQ5v3sw4ve/RqobV7PQAAGQ0AAAAAAABFWinGSexxaa8zRle7Ud5S9H3GrT2PkZl27Ebxpej7jRh/JmxGiPOVY62R5DqrQ1sZY1mQgyBkJ7BYAgyBkJ7BkAIMgZCfIGQAq92/F6i/Ylq++B7nKeJ3eXzep6EutA97UhYii/+36LZd4L2c6O/c7dOVFSioRmp2upJtar8H3nC4iI0SipqzOItxd0X0N35qOVUqKjsyqLUbPbqvYfR3blDwKVGF9uWDjf1Mo4MmRQ6EOCxVJclv/iKavaFNX1uyau+N6yOWklSN32uld2u7O7tsvrKl7RlWJCoQ4J6kuTtlpLPNn7nw+ZO+fI81+O97kctJZOWd4fDuV087g3K62O973K6rBLhOSaO1h6fBw6suR+6GKdapKpJJObTajsVklqvyEAMC5JJWRW3cqdIlvKf2rDdY1rQ2CWCw9tV6UZPh1vWzJdIvAp/asN1ka5of4lhuZiedi9/pG2ht/peAAGUvAAAAAAABk9j5GZlupHe0vR9xp09j5GZrujHe0vQ9xow+rMuJ0RQYiO+ZHlOvEQ3zIcprMhFlDKS5QygEWUMpLlDKARZQykuUMoFyn0iXzep6EutE0jE0djRnWkyth5+hLpiajDWk/MihSy1GaYxvTRTVo2OYs8VTzNlZNG2LuimSsSUzoOSMrE8J3DQTCW0jqy1EtiOcbkIM4J3ZC2d8qRFLCt60d3IaORoQ6KlC3nIGibkFRpF4FP7Vhusa5of4lhuZh0GR6QreU/tWG6xruh/iWH5mHQebi9/pG2hsLsAAyl4AAAAAAAMqbHyMzrHLVS9BdBotTY+RmeYxaqPNroNGH1ZlxOiKbEx3zI8p14mO+ZBY1mQjyhlJcolgCPKGUlyhlAIsoZSXKGUAodKl83nzcumBpmH8FGbaWr5vP0JdMDRqV1ZmSfabZtpK9NIbXplfWp672LvIpI5quFTNNOoiucGUs4BROivTcdq/tnNHUaV3RS+zJ7iDVIcpEWAuW46EREKmQSRzpp7DgnStLXxltHWNnhcwzWFrnktJ6dqdN/vWG6xq+iHiWH5mHQZvplhlCjBq/jeFXJvjSNEfEsPzMOg8/Eu8zXRVol0AAZy4AAAAAAAGT2PkZn+KWqjza6DQKmx8jPBYr9Tza6C+hqzLidEVWJjvmRZTpxK3zIbGwyDbCZR9gsANsJYfYLADbCWH2CwB57TBfN5+hPpgaHSZn+mS+bT9CfTA0FIx1XabPQoK9NHbSRJKNyPD2sSyRwn3O5LsVGPg7+YrKq1l9iYXRS1db5NR6NGV0YpqzGwgLkJYDrHbkcpEKuB0OBHIXFhsZHRGpY5RyTDSCZUabVU6EF+94XrGh6IeJYfmIdBm+mMGqFN/veG6xpOiXiWH5in0HnYhJS7GujtLkAAoLgAAAAAAAZU2PkfQeExK/yebj0Hu57HyM8Lif1HNR6C+hqzLidEVuJW+ZFY6MSt8yKxsRkQywWH2EAG2Cw+wADAsPEsAed0z8Wn6E+mBosqZnem3i0/Qn0wNLnHUefid56WF2HPCbizuhK5xTiFHEOOp610FKky+UbnbUpXKjE4Jwd9qfrRc06sXsFq0lPWaaVfK7MzVKV0UEKfmOtUG47PwLGnhVfWdPaUXSrrwVxpMonREhhL6mi6lhY7R0KcY620Q8QT0SrhuZsbudCwC83vLCVWKHQmpFLxEmWKikeG7IVDLh4cXdmF6x7TRLxLD8xT6DzHZMiu5YfbcJ1z1GiXieH5iHQcSlm7nUY5excgAHJ0AAAAAAADJ7HyM8Lif1HNR6D3U9j5GeFxW2hzUegvoaszYnRHDifCZCT4nwmQmwxoLCWFsAJCwWJHU81+XXbk4g7Z5lbiIu+CbLkjsJYdOSexWsJYkix53TXxefoT6YGm9FjM9NfFp+hPpgakqfQefiN56OHdoo58pz1Kav7jtnTIXAzl9zlleOzWjooYn/gjqXWrgOecbbOEk61LXupJXfQSQxKfEU2d8PASQmDnKi1lUvwnLVm/UQKrYSpXJsNBbs6qFdJHA6txIS4CbEFV2RKylhYL99wnXPYaJ+J4fmKfQeC05l82gv3zCdc97on4nh+Yp9BK0OHqXIABIAAAAAAABk9j5GeGxX6jmo9B7mex8jPCVakZrDzi7xlRhJPjTjqL6GrM2J0RyYnwmQE+J8JkRsMggAAACCigDRRRADzum3i0/Qn0wNYS1LkRk2m813PKN9bp1JW8ycE3+KNZjsXIjzsRuN9DahJRIpQJ2NaKS85KtM450y0kiCcLgnMVkoDXc7p0yGdMk6uczkNbJJQEdNk3BG2SQdtYycRFIlHLRRacTvQh9swnXNB0U8Tw3MU+qZ1pq/kKf2zC9c0TRGalgsM1r+Qp/grE+Dh6l0AAAAAAAAAADZLUeFxCSVFJWyRdNpaknC8WvNsPds8vu7uDVlJ1MNOKcnmlSnqi5eVB8EtWtPU/MW0ZqMu5RWg5R7FDilvmQWJq+5+6DevD3twpp9DIv+nY/wCrS/D4mvqQ5MvTlwIFg7gx/wBVl/f3jXgsf9Vn6h1I8jJLgcFhiwWP+qy9Vh3cG6H1WX4fEdSPIyS4FCwyWEx6Tfck3ZN2S1vzITD4TdCcVJ4ScG772aSktfDZ2HUjyMkuCj01hfDTdtkZxvw61fpij1+jWmuDxdKDlXpUquSKqUqs1CUZpLNlzWzR86KzF7i42rGVOeFbjNWetfgeUl2LMTJ72E48WaUUvVZmWslJ3TNVBuMbNGtPdTDfWKHtofER7qYb6xQ9tD4mSd6bF+S/4o/ATvT4vyX/ABR+BRlL8yNZe6eG+sUPbQ+JHLdLD/WKHtofEyh9inFr9GX3OPwIqHYwxk1mdKcL33s8ikvUmvxCiRmRrf8A1LD/AFih7aHxGy3Qw309D20PiZV3qcZ5L9cfgD7FWM8h+uPwJyjMjUu7cN9PQ9tD4jZ43DfWKHtofEy5dirGeS/Wvyi96jG+T+MfgRlZOdGmzx2G+noe2h8TjxOOw6190UF53Wh8TP8AvT4zyf8A2j+UWPYmxj/RX8cV/SMrJzon0v0ioVZUMPQnGplxFOrUnTeaCULtRUtjfDq4jZtHMO6eFoQas40aaa2a8quZzop2Ke1VY1sTJWg7qkpZ3J8GZpJJchrCVjo5vd3HAAEEgAAAAAAAgAAACABJyKAACQAAAEAABAoABBIAAEgBAAAUQAAAUAAAAAAAACCQAAAAAAA//9k=">
+    </div>
+    <div class="product-details">
+      <div class="product-title">OnePlus 7T</div>
+      <p class="product-description">OnePlus 7T smartphone</p>
+    </div>
+    <div class="product-price">243.99</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">243.99</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">269.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">13.43</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">Free</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">283.44</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+</div>
+</html>

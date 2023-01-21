@@ -1,5 +1,4 @@
 function validate(){
-    makeVisible();
     validateForm();
 }
 
@@ -58,6 +57,7 @@ function validateForm(){
     let check = validateCheckbox();
     if(user && psw && name && ctr && sex && lang && zip && email && check){
         alertBox();
+        makeVisible();
     }
 }
 

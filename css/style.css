@@ -50,3 +50,24 @@ img{
     height: auto;
     width: 200px;
 }
+
+/* input:invalid {
+  border: 2px dashed red;
+}
+
+
+input:valid {
+  border: 2px solid greenyellow;
+} */
+
+.ValidMessage{
+  color: green
+}
+
+.InvalidMessage{
+  color: red
+}
+
+.MediumMessage{
+  color: orange
+}
